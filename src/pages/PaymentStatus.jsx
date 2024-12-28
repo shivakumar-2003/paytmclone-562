@@ -31,3 +31,4 @@ export const PaymentStatus = () => {
     </div>
   );
 };
+//payment status
