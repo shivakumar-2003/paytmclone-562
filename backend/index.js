@@ -22,7 +22,7 @@ app.use("/api/v1", mainRouter);
 //database
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/shivadb");
+    await mongoose.connect("mongodb://localhost:27017/shivadb/users");
     console.log("database is connected successfully!");
   } catch (err) {
     console.log(err);

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Wallet - Transaction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>fastpay-prototype-2</h1>
+    
+    <form id="transactionForm">
+      <div>
+        <label for="userId">USER ID :</label>
+        <input type="text" id="userId" class="first" name="userId" required />
+      </div>
+      
+      <div>
+        <label for="transactionAmount">TRANSACTION     AMOUNT :</label>
+        <input type="number" id="transactionAmount" class="second" name="transactionAmount" required />
+      </div>
+      
+      <div>
+        <label for="transactionType">TRANSACTION   TYPE :</label>
+        <select id="transactionType" name="transactionType"class="fourth" required>
+          <option value="credit">Credit</option>
+          <option value="debit">Debit</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="timestamp">TRANSACTION  TIMESTAMP :</label>
+        <input type="datetime-local" id="timestamp" class="third" name="timestamp" required />
+      </div>
+      
+      <button type="submit">Submit Transaction</button>
+    </form>
+    
+    <div id="responseMessage" class="response-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

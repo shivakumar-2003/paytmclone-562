@@ -173,4 +173,6 @@ router.get("/getUser", authMiddleware, async (req, res) => {
   res.json(user);
 });
 
-module.exports = router;
+module.exports = {
+  userRouter: router
+}
